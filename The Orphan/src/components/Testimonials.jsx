@@ -7,21 +7,21 @@ const Testimonials = () => {
       name: "Alex P.",
       text: "I thought it was just a game, but The Orphan maze had me jumping at every turn. Escaping the house was the scariest fun I've had in ages!",
       rating: 5,
-      image: "/api/placeholder/60/60",
+      image: "src/assets/image/grouppic/ipis.jpg",
     },
     {
       id: 2,
       name: "Jamie L.",
       text: "The maze changes every time! I finally escaped after so many dead ends. The sound and atmosphere are so creepy!",
       rating: 5,
-      image: "/api/placeholder/60/60",
+      image: "src/assets/image/grouppic/ipis.jpg",
     },
     {
       id: 3,
       name: "Morgan S.",
       text: "Best horror maze on HypeHype. I dared my friends to beat my escape time. 10/10 would get lost again!",
       rating: 5,
-      image: "/api/placeholder/60/60",
+      image: "src/assets/image/grouppic/ipis.jpg",
     },
   ];
 
@@ -43,7 +43,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-dark-card rounded-lg p-6 border border-gray-700 hover:border-red-accent transition-all"
+              className="bg-dark-card rounded-lg p-6 border border-gray-700 hover:border-red-accent transition-all flex flex-col h-full"
             >
               <div className="flex items-center space-x-1 mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -62,7 +62,7 @@ const Testimonials = () => {
                 ))}
               </div>
 
-              <p className="text-gray-300 mb-6 leading-relaxed">
+              <p className="text-gray-300 mb-6 leading-relaxed flex-1">
                 {testimonial.text.split("The Orphan").map((part, i, arr) =>
                   i < arr.length - 1 ? (
                     <>
@@ -75,7 +75,7 @@ const Testimonials = () => {
                 )}
               </p>
 
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3 mt-auto">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
