@@ -52,7 +52,7 @@ const group = [
 const Games = () => {
   return (
     <section
-      id="group"
+      id="creators"
       className="py-20 bg-gradient-to-b from-dark-bg to-gray-900"
     >
       <div className="container mx-auto px-4">

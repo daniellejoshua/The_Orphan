@@ -21,8 +21,6 @@ const Hero = () => {
     return () => audio.pause();
   }, []);
 
-  // (Removed duplicate ambient sound effect)
-
   const [showTrailer, setShowTrailer] = useState(false);
 
   const handleOpenTrailer = () => setShowTrailer(true);
@@ -79,7 +77,16 @@ const Hero = () => {
           you escape, or will the house claim you forever?
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-red-accent hover:bg-red-hover text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all transform hover:scale-105">
+          <button
+            className="bg-red-accent hover:bg-red-hover text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all transform hover:scale-105"
+            onClick={() =>
+              window.open(
+                "https://hypehype.com/game/the-orphan/r/10ZO1w1eSGncAsR",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          >
             Play on HypeHype
           </button>
           <button
@@ -102,7 +109,7 @@ const Hero = () => {
       {/* Trailer Modal Dialog */}
       {showTrailer && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80">
-          <div className="relative bg-gray-900 rounded-lg shadow-lg max-w-2xl w-full mx-4 p-6 border-2 border-red-accent animate-fade-in">
+          <div className="relative bg-gray-900 rounded-lg shadow-lg max-w-5xl w-full mx-4 p-6 border-2 border-red-accent animate-fade-in">
             <button
               className="absolute top-2 right-2 text-white text-2xl hover:text-red-accent focus:outline-none"
               onClick={handleCloseTrailer}
@@ -113,15 +120,14 @@ const Hero = () => {
             <h2 className="text-2xl font-bold text-white mb-4 font-lacquer tracking-wide">
               The Orphan Trailer
             </h2>
-            <div className="aspect-w-16 aspect-h-9 w-full rounded overflow-hidden mb-2">
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="The Orphan Trailer"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-64 md:h-96 rounded"
-              ></iframe>
+            <div className="aspect-w-16 aspect-h-9 w-full rounded overflow-hidden mb-2 flex items-center justify-center bg-black">
+              <video
+                src="/src/assets/TEASER.mp4"
+                controls
+                className="w-full h-[60vw] max-h-[80vh] rounded"
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>

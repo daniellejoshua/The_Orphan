@@ -50,41 +50,40 @@ const Header = () => {
           <button
             onClick={() => scrollToSection("home")}
             className="text-gray-300 hover:text-red-accent transition-colors"
+            type="button"
           >
             Home
           </button>
           <button
             onClick={() => scrollToSection("about")}
             className="text-gray-300 hover:text-red-accent transition-colors"
+            type="button"
           >
             About
           </button>
+
           <button
-            onClick={() => scrollToSection("games")}
+            onClick={() => scrollToSection("creators")}
             className="text-gray-300 hover:text-red-accent transition-colors"
+            type="button"
           >
-            Games
+            Creators
           </button>
           <button
             onClick={() => scrollToSection("contact")}
             className="text-gray-300 hover:text-red-accent transition-colors"
+            type="button"
           >
             Contact
           </button>
-          <button
-            onClick={() => scrollToSection("creators")}
-            className="text-gray-300 hover:text-red-accent transition-colors"
-          >
-            Creators
-          </button>
         </nav>
-
-        {/* No CTA Button for event showcase */}
 
         {/* Mobile Menu Button */}
         <button
           className="md:hidden text-white"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+          type="button"
         >
           <svg
             className="w-6 h-6"
@@ -113,32 +112,30 @@ const Header = () => {
             <button
               onClick={() => scrollToSection("home")}
               className="text-gray-300 hover:text-red-accent transition-colors text-left"
+              type="button"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("about")}
               className="text-gray-300 hover:text-red-accent transition-colors text-left"
+              type="button"
             >
               About
             </button>
             <button
-              onClick={() => scrollToSection("games")}
+              onClick={() => scrollToSection("creators")}
               className="text-gray-300 hover:text-red-accent transition-colors text-left"
+              type="button"
             >
-              Games
+              Creators
             </button>
             <button
               onClick={() => scrollToSection("contact")}
               className="text-gray-300 hover:text-red-accent transition-colors text-left"
+              type="button"
             >
               Contact
-            </button>
-            <button
-              onClick={() => scrollToSection("creators")}
-              className="text-gray-300 hover:text-red-accent transition-colors text-left"
-            >
-              Creators
             </button>
           </nav>
         </div>

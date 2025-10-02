@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -8,6 +8,10 @@ import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 
 function App() {
+  useEffect(() => {
+    document.title = "THE ORPHAN";
+  }, []);
+
   return (
     <div className="min-h-screen bg-dark-bg">
       <Header />

@@ -48,16 +48,17 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-red-accent rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">O</span>
-              </div>
+              <img
+                src="/src/assets/image/logo2.png"
+                alt="The Orphan Logo"
+                className="w-8 h-8 object-contain rounded-full shadow-lg border-2 border-red-accent bg-black"
+              />
               <span className="text-xl font-bold text-white font-lacquer">
                 THE ORPHAN
               </span>
             </div>
 
             <p className="text-gray-400 text-center md:text-right">
-              © 2025 The Orphan Maze Game. All rights reserved. <br />© 2025{" "}
               <span className="font-lacquer">The Orphan</span> Maze Game. All
               rights reserved. <br />
               Can you escape the maze?
