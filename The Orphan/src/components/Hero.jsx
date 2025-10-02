@@ -66,15 +66,13 @@ const Hero = () => {
 
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-          Welcome to{" "}
+          {" "}
           <span className="text-red-accent font-lacquer flicker">
             The Orphan
           </span>
         </h1>
-        <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Lost in a haunted maze, you must outsmart the darkness and find your
-          way out. Every path is a mystery, every shadow hides a secret. Will
-          you escape, or will the house claim you forever?
+        <p className="text-xl font-horror md:text-2xl text-red-500 mb-8 max-w-3xl mx-auto leading-relaxed">
+          Hide, Run, Remember
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
@@ -93,7 +91,7 @@ const Hero = () => {
             className="border-2 border-red-accent text-red-accent hover:bg-red-accent hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all"
             onClick={handleOpenTrailer}
           >
-            Watch Trailer
+            Watch Teaser
           </button>
         </div>
         {/* Creepy eyes in the corner */}
@@ -118,7 +116,7 @@ const Hero = () => {
               &times;
             </button>
             <h2 className="text-2xl font-bold text-white mb-4 font-lacquer tracking-wide">
-              The Orphan Trailer
+              The Orphan Teaser
             </h2>
             <div className="aspect-w-16 aspect-h-9 w-full rounded overflow-hidden mb-2 flex items-center justify-center bg-black">
               <video

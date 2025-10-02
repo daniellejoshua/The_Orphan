@@ -19,26 +19,6 @@ const Footer = () => {
               media or email{" "}
               <span className="text-red-accent">theorphanmaze@gmail.com</span>.
             </p>
-            <div className="flex justify-center space-x-4">
-              <a
-                href="#"
-                className="w-10 h-10 bg-red-accent rounded-full flex items-center justify-center hover:bg-red-hover transition-colors"
-              >
-                <span className="text-white font-bold">f</span>
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-red-accent rounded-full flex items-center justify-center hover:bg-red-hover transition-colors"
-              >
-                <span className="text-white font-bold">t</span>
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-red-accent rounded-full flex items-center justify-center hover:bg-red-hover transition-colors"
-              >
-                <span className="text-white font-bold">i</span>
-              </a>
-            </div>
           </div>
         </div>
       </section>

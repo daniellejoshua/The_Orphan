@@ -11,7 +11,7 @@ const Testimonials = () => {
     },
     {
       id: 2,
-      name: "Jamie L.",
+      name: "Justin Nabunturan",
       text: "The maze changes every time! I finally escaped after so many dead ends. The sound and atmosphere are so creepy!",
       rating: 5,
       image: "src/assets/image/grouppic/ipis.jpg",

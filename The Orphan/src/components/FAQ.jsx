@@ -23,8 +23,7 @@ const HowToPlay = () => {
             </li>
             <li>
               <span className="text-red-accent font-bold">Checkpoints</span> —
-              Reach glowing checkpoints to unlock pieces of the story and save
-              your progress.
+              Reach glowing checkpoints to unlock pieces of the story.
             </li>
             <li>
               <span className="text-red-accent font-bold">Find the Key</span> —
@@ -47,9 +46,12 @@ const HowToPlay = () => {
             Reach out if you have questions or want tips for escaping{" "}
             <span className="font-lacquer">The Orphan</span>!
           </p>
-          <button className="bg-red-accent hover:bg-red-hover text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+          <a
+            href="mailto:theorphan@gmail.com"
+            className="bg-red-accent hover:bg-red-hover text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-block"
+          >
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
     </section>

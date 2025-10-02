@@ -61,9 +61,9 @@ const About = () => {
           <div className="order-2 md:order-1">
             <div className="bg-dark-card rounded-lg p-8 border border-gray-700">
               <img
-                src="/api/placeholder/400/300"
-                alt="The Orphan Maze Game"
-                className="w-full h-64 object-cover rounded-lg mb-4"
+                src="/src/assets/image/poster.png"
+                alt="The Orphan Maze Game Poster"
+                className="w-full h-auto max-h-96 object-contain rounded-lg mb-4"
               />
               <div className="text-center">
                 <div className="text-red-accent font-semibold mb-2">
@@ -92,7 +92,16 @@ const About = () => {
               see if you can survive the maze. Will you make it out, or will the
               house claim you too?
             </p>
-            <button className="bg-red-accent hover:bg-red-hover text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+            <button
+              className="bg-red-accent hover:bg-red-hover text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+              onClick={() =>
+                window.open(
+                  "https://hypehype.com/game/the-orphan/r/10ZO1w1eSGncAsR",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+            >
               Play on HypeHype
             </button>
           </div>

@@ -10,7 +10,7 @@ const group = [
   },
   {
     name: "Danielle Esternon",
-    role: "Lead Developer",
+    role: "Web Developer",
     image:
       "src/assets/image/grouppic/234175192_538000147419070_7435224955489352536_n.jpg",
     bio: "Turns nightmares into code. Enjoys horror games",
@@ -31,20 +31,21 @@ const group = [
   },
   {
     name: "Adrian Xiao",
-    role: "Level Architect",
-    image: "src/assets/image/grouppic/ipis.jpg",
+    role: "Architect",
+    image: "src/assets/image/grouppic/PixelCutout_1759288799666.png",
     bio: "Designs the twisted maze",
   },
   {
     name: "Charlotte Sang-An",
     role: "QA & Playtester",
-    image: "src/assets/image/grouppic/ipis.jpg",
+    image:
+      "src/assets/image/grouppic/Messenger_creation_C299B18F-CDD6-4306-825D-48902A2D17AF.jpeg",
     bio: "Finds every bug and hidden scare.",
   },
   {
     name: "John Kean Gasalao",
     role: "Story Writer",
-    image: "src/assets/image/grouppic/ipis.jpg",
+    image: "src/assets/image/grouppic/cb761245-6624-4397-b7c1-c8eeb6222064.jpg",
     bio: "Creator of the dark tale behind the maze.",
   },
 ];
