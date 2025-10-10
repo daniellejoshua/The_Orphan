@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 const Hero = () => {
   const [flash, setFlash] = useState(false);
+  const [showTrailer, setShowTrailer] = useState(false);
+  const audioRef = useRef(null);
 
   // Lightning flash effect
   useEffect(() => {
@@ -18,13 +20,23 @@ const Hero = () => {
     audio.loop = true;
     audio.volume = 0.4;
     audio.play();
+    audioRef.current = audio;
     return () => audio.pause();
   }, []);
 
-  const [showTrailer, setShowTrailer] = useState(false);
+  const handleOpenTrailer = () => {
+    setShowTrailer(true);
+    if (audioRef.current) {
+      audioRef.current.pause();
+    }
+  };
 
-  const handleOpenTrailer = () => setShowTrailer(true);
-  const handleCloseTrailer = () => setShowTrailer(false);
+  const handleCloseTrailer = () => {
+    setShowTrailer(false);
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
+  };
 
   return (
     <section
@@ -91,7 +103,7 @@ const Hero = () => {
             className="border-2 border-red-accent text-red-accent hover:bg-red-accent hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all"
             onClick={handleOpenTrailer}
           >
-            Watch Teaser
+            Watch Trailer
           </button>
         </div>
         {/* Creepy eyes in the corner */}
@@ -116,11 +128,11 @@ const Hero = () => {
               &times;
             </button>
             <h2 className="text-2xl font-bold text-white mb-4 font-lacquer tracking-wide">
-              The Orphan Teaser
+              The Orphan Trailer
             </h2>
             <div className="aspect-w-16 aspect-h-9 w-full rounded overflow-hidden mb-2 flex items-center justify-center bg-black">
               <video
-                src="/src/assets/TEASER.mp4"
+                src="src/assets/THE ORPHAN TRAILER.mp4"
                 controls
                 className="w-full h-[60vw] max-h-[80vh] rounded"
               >
